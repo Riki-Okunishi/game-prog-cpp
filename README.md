@@ -14,23 +14,23 @@
 
     [インストーラのURL](http://mingw-w64.org/doku.php/download)
 
-  1. 「Architecture」を「i686」から「x86_64」に切り替えて，インストールするディレクトリパスから`Program Files`を削除してC:直下にインストールさせる
-  2. 環境変数Pathにmingw-w64内の`bin`ディレクトリへのパスを通す
+2. 「Architecture」を「i686」から「x86_64」に切り替える．インストールするディレクトリパスから`Program Files`を削除してC:直下にインストールさせる
+3. 環境変数Pathにmingw-w64内の`bin`ディレクトリへのパスを通す
 
-1. SDL2のダウンロード
+4. SDL2のダウンロード
 [SDL2のダウンロードページ](https://www.libsdl.org/download-2.0.php)から，
 + 「Runtime Binaries」から`SDL2-2.0.14-win32-x64.zip (64-bit Windows)`
 + 「Development Libraries」から`SDL2-devel-2.0.14-mingw.tar.gz (MinGW 32/64-bit)`
  
   をダウンロード
 
-3. 前者を普通に解凍，後者は`tar`コマンドで解凍
+5. 前者を普通に解凍，後者は`tar`コマンドで解凍
 ```bash
 tar -xvfz SDL2-devel-2.0.14-mingw.tar.gz
 ```
-  1. 前者を解凍すると出てくる`SDL2.dll`を実行ファイルと同じ階層(つまり`./build`に配置)
+6. 前者を解凍すると出てくる`SDL2.dll`を実行ファイルと同じ階層(つまり`./build`に配置)
 
-  2. 後者を解凍して出てくる`x86_64-w64-mingw32`フォルダの中身をmingw-w64内の同名フォルダの中に配置
+7. 後者を解凍して出てくる`x86_64-w64-mingw32`フォルダの中身をmingw-w64内の同名フォルダの中に配置
 
 ## 設定
 以下の設定ファイルでは適宜`<~~>`の部分を環境・状況に合わせて置換．
