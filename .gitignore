@@ -53,4 +53,8 @@ CTestTestfile.cmake
 _deps
 
 ## SDL2
-./build/SDL2.dll
+/build/SDL2.dll
+
+## Doxygen
+/doc
+Doxyfile
